@@ -1,0 +1,73 @@
+#design-develop {
+  width: 100%;
+  @mixin displayInline {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    color: black;
+  }
+
+  ul {
+    padding: 0px;
+    li {
+      width: 260px;
+      height: 40px;
+      margin-top: 25px;
+      background-color: white;
+      a {
+        text-decoration: none;
+        .arrow-right {
+          display: inline-block;
+          height: 40px;
+          text-align: center;
+          width: 20px;
+          font-size: 20px;
+          background-color: #585ce9;
+          color: white;
+          transition: width 1s;
+        }
+      }
+    }
+  }
+  li:hover {
+    .arrow-right {
+      width: 30px;
+    }
+  }
+
+  margin-top: 100px;
+  .container {
+    .image {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      width: 90%;
+    }
+    .web-design {
+      @include displayInline();
+    }
+    .android-develop {
+      @include displayInline();
+    }
+    .back-end {
+      @include displayInline();
+    }
+    .e-commerce {
+      @include displayInline();
+    }
+    .mobile-app {
+      @include displayInline();
+    }
+    .ios-develop {
+      @include displayInline();
+    }
+    .front-end {
+      @include displayInline();
+    }
+    .print-design {
+      @include displayInline();
+    }
+  }
+}

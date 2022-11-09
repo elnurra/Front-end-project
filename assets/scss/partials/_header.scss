@@ -1,0 +1,227 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  @mixin displayInline {
+    display: inline;
+  }
+  @mixin forButtonSignIn {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: blue;
+    margin-top: 30px;
+    width: 110px;
+    height: 32px;
+  }
+  @mixin forButtonSignUp {
+    background-color: #585ce9;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 32px;
+  }
+  .fa-bars {
+    display: none;
+    margin-top: 30px;
+  }
+  .row {
+    .col {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .logo-image {
+    display: flex;
+    justify-content: center;
+    padding: 34px;
+  }
+  .navbar {
+    position: relative;
+    width: 440px;
+    ul {
+      margin: 0px;
+      padding: 0px;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        .menu {
+          .discover {
+            @include displayInline();
+            left: 110px;
+          }
+          .discover:hover {
+            .sub-menu {
+              display: block;
+            }
+          }
+          .discover-nav {
+            padding: 10px 0px;
+          }
+          .pages {
+            @include displayInline();
+          }
+          .pages:hover {
+            .sub-menu {
+              display: block;
+              left: 245px;
+            }
+          }
+          .pages-nav {
+            padding: 10px 0px;
+          }
+          .arrow-down {
+            @include displayInline();
+            margin-left: 10px;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: gray;
+        }
+      }
+      .sub-menu > li:first-child {
+        border-top: none;
+        border-top-left-radius: 3px;
+      }
+      .sub-menu > li:last-child {
+        border-bottom-left-radius: 3px;
+      }
+      .sub-menu {
+        background-color: white;
+        position: absolute;
+        width: 250px;
+        display: none;
+
+        border-radius: 10px;
+
+        li {
+          display: block;
+          margin: 0px;
+          border-top: 1px solid rgb(238, 238, 238);
+          padding: 10px;
+          a {
+            display: block;
+          }
+        }
+        li:hover {
+          display: block;
+          background-color: rgb(238, 238, 238);
+          border-left: 3px solid #585ce9;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+
+  .btn-sign-in {
+    @include forButtonSignIn();
+  }
+  .btn-sign-in:hover {
+    @include forButtonSignUp();
+  }
+  .btn-sign-up {
+    @include forButtonSignUp();
+  }
+  .btn-sign-up:hover {
+    @include forButtonSignIn();
+  }
+
+  @media (max-width: 1400px) {
+    .row {
+      width: 100%;
+    }
+
+    .navbar {
+      display: none;
+    }
+  }
+  @media (max-width: 991px) {
+    .col:nth-child(3) {
+      display: none;
+      .btn-sign-in {
+        display: none;
+      }
+      .btn-sign-up {
+        display: none;
+      }
+    }
+    .col:nth-child(2) {
+      display: none;
+      width: 100%;
+      ul {
+        li {
+          display: block;
+          background-color: rgb(238, 238, 238);
+          width: 100%;
+          margin-left: 0px;
+          .menu {
+            display: flex;
+            justify-content: space-between;
+            .sub-menu > li:first-child {
+              border-top: none;
+              border-top-left-radius: 3px;
+            }
+            .sub-menu > li:last-child {
+              border-bottom-left-radius: 3px;
+            }
+            .sub-menu {
+              background-color: white;
+              position: absolute;
+              width: 100%;
+              display: none;
+              left: 0;
+              border-radius: 10px;
+
+              li {
+                display: block;
+                margin: 0px;
+                border-top: 1px solid rgb(238, 238, 238);
+                padding: 10px;
+                a {
+                  display: block;
+                }
+              }
+              li:hover {
+                display: block;
+                background-color: rgb(238, 238, 238);
+                border-left: 3px solid #585ce9;
+                transition: all 0.3s;
+              }
+            }
+          }
+          .menu {
+            .pages {
+              .sub-menu {
+                position: absolute;
+                left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .row {
+      .logo-image {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .fa-bars {
+          margin: 0px;
+          display: inline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

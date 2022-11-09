@@ -1,0 +1,86 @@
+#computing-services {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  .container {
+    .col-3 {
+      display: flex;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        cursor: pointer;
+
+        .cloud-solutions {
+          margin-top: 30px;
+          background-color: white;
+          width: 255px;
+          height: 259px;
+          border-radius: 10px;
+          margin-right: 0px;
+          .cloud-icon {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 67px;
+            height: 67px;
+
+            border-radius: 100px;
+            color: #585ce9;
+          }
+          .title {
+            text-align: center;
+            color: black;
+          }
+          .description {
+            text-align: center;
+            color: grey;
+          }
+        }
+      }
+      .cloud-solutions:hover {
+        background-color: #585ce9;
+        .cloud-icon {
+          background-color: white;
+        }
+        .title {
+          color: white;
+        }
+        .description {
+          color: white;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    a {
+      display: flex;
+      justify-content: center;
+      min-width: 100%;
+    }
+  }
+  @media (max-width: 991px) {
+    .container {
+      min-width: 100%;
+    }
+    .col-3 {
+      width: 50%;
+    }
+    .cloud-solutions {
+      min-width: 50%;
+    }
+  }
+  @media (max-width: 551px) {
+    .col-3 {
+      display: flex;
+      width: 100%;
+    }
+    a {
+      width: 100%;
+    }
+    .cloud-solutions {
+      min-width: 100%;
+    }
+  }
+}

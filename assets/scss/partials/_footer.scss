@@ -1,0 +1,148 @@
+@mixin displayInlineBlock {
+  display: inline-block;
+  font-size: 14px;
+}
+@mixin title {
+  .title {
+    color: white;
+    h5 {
+      font-size: 16px;
+    }
+  }
+}
+footer {
+  min-height: 385px;
+  padding-top: 70px;
+  background-color: #585ce9;
+  margin-top: 100px;
+  .row:nth-child(1) {
+    justify-content: space-between;
+    border-bottom: 1px dotted white;
+    .img-logo {
+      margin-bottom: 30px;
+    }
+    .description {
+      letter-spacing: 0.88px;
+      color: white;
+    }
+    .col-2 {
+      @include title();
+      .list-nav {
+        margin-top: 30px;
+        .nav-list {
+          list-style: none;
+          padding: 0px;
+          li {
+            margin-top: 10px;
+            a {
+              text-decoration: none;
+              color: white;
+
+              .arrow-right {
+                display: inline-block;
+                font-size: 14px;
+              }
+              .push-right {
+                display: inline-block;
+
+                width: 5px;
+                height: 24px;
+              }
+
+              .about-us {
+                @include displayInlineBlock();
+              }
+              .features {
+                @include displayInlineBlock();
+              }
+              .faq {
+                @include displayInlineBlock();
+              }
+              .blog {
+                @include displayInlineBlock();
+              }
+
+              .privacy {
+                @include displayInlineBlock();
+              }
+              .terms {
+                @include displayInlineBlock();
+              }
+              .support {
+                @include displayInlineBlock();
+              }
+              .contact {
+                @include displayInlineBlock();
+              }
+            }
+          }
+          li:hover {
+            .push-right {
+              width: 20px;
+              transition: all 1s;
+            }
+          }
+        }
+      }
+    }
+    .col-3 {
+      @include title();
+      .contact-address {
+        margin-top: 30px;
+        color: white;
+      }
+      .social {
+        list-style: none;
+        padding: 0px;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .row:nth-child(2) {
+    margin-top: 30px;
+    .col-12 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  }
+  @media (max-width: 1200px) {
+    .row {
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 992px) {
+    .row {
+      justify-content: space-between;
+      .col-5 {
+        min-width: 100%;
+      }
+      .col-2 {
+        min-width: 20%;
+      }
+      .col-3 {
+        min-width: 30%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .row {
+      justify-content: center;
+      margin: auto 20px;
+      .col-2 {
+        min-width: 50%;
+        margin-bottom: 50px;
+      }
+      .col-3 {
+        min-width: 100%;
+      }
+    }
+  }
+}

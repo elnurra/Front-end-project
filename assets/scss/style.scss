@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+@import "./partials/header";
+@import "./partials/learn-more";
+@import "./partials/computing-services";
+@import "./partials/cloud-services";
+@import "./partials/design-develop";
+@import "./partials/statistics";
+@import "./partials/team-comments";
+@import "./partials/price-plan";
+@import "./partials/apply-contact";
+@import "./partials/blog-posts";
+@import "./partials/footer";

@@ -1,0 +1,66 @@
+#statistics {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background-image: url(/assets/images/header/parallax.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  @mixin forColumns {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    .title {
+      width: 50%;
+      margin-left: 25%;
+      font-size: 35px;
+      border-bottom: 1px dashed;
+    }
+    .description {
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    .row {
+      display: flex;
+      justify-content: space-around;
+      .col-3 {
+        margin-top: 90px;
+        padding: 50px;
+        width: 200px;
+        height: 200px;
+        .project-template {
+          @include forColumns();
+        }
+        .happy-customer {
+          @include forColumns();
+        }
+        .experienced-staff {
+          @include forColumns();
+        }
+        .ongoing-project {
+          @include forColumns();
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    min-width: 100%;
+  }
+  @media (max-width: 991px) {
+    .row {
+      .col-3 {
+        min-width: 50%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .row {
+      .col-3 {
+        min-width: 100%;
+      }
+    }
+  }
+}

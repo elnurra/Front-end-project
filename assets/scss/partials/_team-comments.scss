@@ -1,0 +1,115 @@
+#team-comments {
+  width: 100%;
+  margin-top: 100px;
+  @mixin teammates {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+
+    background-size: cover;
+    margin: auto;
+  }
+  .container {
+    .row {
+      display: flex;
+      justify-content: center;
+      .title {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+      .description {
+        display: inline-block;
+        width: 500px;
+        text-align: center;
+        color: grey;
+        margin-bottom: 50px;
+        margin-top: 30px;
+      }
+      .col-3 {
+        width: 270px;
+        background-color: white;
+        margin-left: 30px;
+        padding: 0px;
+        .user-name {
+          width: 100%;
+          background-color: #585ce9;
+          color: white;
+          padding: 10px;
+          h3 {
+            text-align: center;
+            font-size: 16px;
+            margin: 0px;
+          }
+          span {
+            display: block;
+            font-size: 10px;
+            text-align: center;
+          }
+        }
+        .social-medias {
+          margin: 20px 0px;
+          ul {
+            list-style: none;
+            text-align: center;
+            padding: 0px;
+            width: 100%;
+            a {
+              text-decoration: none;
+              color: #585ce9;
+            }
+            li {
+              display: inline-block;
+              margin-right: 10px;
+            }
+          }
+        }
+        .user-comment {
+          width: 100%;
+          padding: 0px 25px;
+          margin: 30px 0px;
+          text-align: center;
+        }
+        .user-avatar-stategist {
+          @include teammates();
+          background-image: url(/assets/images/header/strategist.jpg);
+        }
+        .user-avatar-designer {
+          @include teammates();
+          background-image: url(/assets/images/header/designer.jpg);
+        }
+        .user-avatar-android {
+          @include teammates();
+          background-image: url(/assets/images/header/androider.jpg);
+        }
+        .user-avatar-ios {
+          @include teammates();
+          background-image: url(/assets/images/header/ioser.jpg);
+        }
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .row:nth-child(2) {
+      min-width: 100%;
+      .col-3 {
+        margin: 5px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .col-3 {
+      max-width: 22%;
+    }
+  }
+  @media (max-width: 991px) {
+    .col-3 {
+      max-width: 50%;
+    }
+  }
+  @media (max-width: 767px) {
+    .col-3 {
+      min-width: 100%;
+    }
+  }
+}
