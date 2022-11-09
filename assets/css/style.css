@@ -1296,6 +1296,10 @@ header .row .btn-sign-up:hover {
   color: white;
 }
 
+#price-plan .row:nth-child(2) .col-4 .select-plan .select-btn:focus {
+  background-color: green;
+}
+
 @media (max-width: 1200px) {
   #price-plan .row:nth-child(2) {
     -webkit-box-pack: center;

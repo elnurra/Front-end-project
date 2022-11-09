@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./src/js/clickevents.js" type="module" defer></script>
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col logo-image">
+                    <a href="index.html"><img src="./assets/images/header/logo-blue.png" alt="jirono"></a>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="col-5 col navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <div class="menu">
+                                    <div class="discover">
+                                        <a class="discover-nav" style="cursor:pointer;">Discover</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#cloud-services">Features</a> </li>
+                                            <li><a href="#team-comments">Our Team</a> </li>
+                                            <li><a href="#price-plan">Pricing Plans</a> </li>
+                                            <li><a href="#blog-posts">Latests Blogs</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="arrow-down">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu">
+                                    <div class="pages">
+                                        <a class="pages-nav" style="cursor:pointer ;">Pages</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">About Us</a> </li>
+                                            <li><a href="">Features</a> </li>
+                                            <li><a href="">FAQ's</a> </li>
+                                            <li><a href="">Blog</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="arrow-down">
+                                        <i class="fa-solid fa-chevron-down" style="cursor: pointer;"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col login">
+                    <div class="row">
+                        <div class="col-6 sign-in">
+                            <button class="btn-sign-in">SIGN IN</button>
+                        </div>
+                        <div class="col-6 sign-up">
+                            <button class="btn-sign-up">SIGN UP</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Footer start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="img-logo">
+                        <img src="./assets/images/header/logo-white.png" alt="">
+                    </div>
+                    <div class="description">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a
+                        feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="title">
+                        <h5>Helpful Links</h5>
+                    </div>
+                    <div class="list-nav">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="about-us"><span>About us</span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="features"><span>Features</span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="faq"><span>FAQ's</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="blog"><span>Blog</span></div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="title">
+                        <h5>Support</h5>
+                    </div>
+                    <div class="list-nav">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="privacy"><span>Privacy Policy</span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="terms"><span>Terms of Use</span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="support"><span>Support Center</span></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="push-right"></div>
+                                    <div class="contact"><span>Contact</span></div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="title">
+                        <h5>Contact Us</h5>
+                    </div>
+                    <div class="contact-address">
+                        <p>
+                            455 West Orchard Street
+                        </p>
+                        <p>Kings Mountain, NC 28086
+                        </p>
+                        <p>Phone: (272) 211-7370</p>
+                        <p style="font-size:15px ;"><span>E-mail:</span> support@yourbrand.com</p>
+                    </div>
+
+                    <div class="social-medias">
+                        <ul class="social">
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">© 2019 Jirono. All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+
+</html>

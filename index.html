@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="./src/js/clickevents.js" defer></script>
+    <script src="./src/js/clickevents.js" type="module" defer></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col logo-image">
-                    <a href=""><img src="./assets/images/header/logo-blue.png" alt="jirono"></a>
+                    <a href="#"><img src="./assets/images/header/logo-blue.png" alt="jirono"></a>
                     <i class="fa-solid fa-bars"></i>
                 </div>
 
@@ -55,7 +55,7 @@
                                             <li><a href="">About Us</a> </li>
                                             <li><a href="">Features</a> </li>
                                             <li><a href="">FAQ's</a> </li>
-                                            <li><a href="">Blog</a> </li>
+                                            <li><a href="blog.html">Blog</a> </li>
                                         </ul>
                                     </div>
                                     <div class="arrow-down">
@@ -628,8 +628,9 @@
                         </div>
 
                         <div class="select-plan">
-                            <a href=""><button class="select-btn">SELECT PLAN</button></a>
-
+                            <div class="first-btn">
+                                <a><button class="select-btn">SELECT PLAN</button></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-4">
@@ -664,7 +665,9 @@
                         </div>
 
                         <div class="select-plan">
-                            <a href=""><button class="select-btn">SELECT PLAN</button></a>
+                            <div class="second-btn">
+                                <a><button class="select-btn">SELECT PLAN</button></a>
+                            </div>
 
                         </div>
                     </div>
@@ -698,7 +701,9 @@
                             </ul>
                         </div>
                         <div class="select-plan">
-                            <a href=""><button class="select-btn">SELECT PLAN</button></a>
+                            <div class="third-btn">
+                                <a><button class="select-btn">SELECT PLAN</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -934,7 +939,7 @@
 
         </div>
     </footer>
-
+    <!-- Footer end -->
 </body>
 
 </html>

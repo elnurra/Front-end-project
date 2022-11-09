@@ -96,6 +96,9 @@
           background-color: #585ce9;
           color: white;
         }
+        .select-btn:focus {
+          background-color: green;
+        }
       }
     }
   }
