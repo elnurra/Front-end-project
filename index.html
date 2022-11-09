@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./src/js/clickevents.js" defer></script>
 </head>
 
 <body>
@@ -27,16 +30,16 @@
                 <div class="col-5 col navbar">
                     <nav>
                         <ul>
-                            <li><a href="">Home</a></li>
+                            <li><a href="#">Home</a></li>
                             <li>
                                 <div class="menu">
                                     <div class="discover">
                                         <a class="discover-nav" style="cursor:pointer;">Discover</a>
                                         <ul class="sub-menu">
-                                            <li><a href="">Features</a> </li>
-                                            <li><a href="">Our Team</a> </li>
-                                            <li><a href="">Pricing Plans</a> </li>
-                                            <li><a href="">Latests Blogs</a> </li>
+                                            <li><a href="#cloud-services">Features</a> </li>
+                                            <li><a href="#team-comments">Our Team</a> </li>
+                                            <li><a href="#price-plan">Pricing Plans</a> </li>
+                                            <li><a href="#blog-posts">Latests Blogs</a> </li>
                                         </ul>
                                     </div>
                                     <div class="arrow-down">
@@ -137,7 +140,7 @@
         <section id="computing-services">
             <div class="container">
                 <div class="row">
-                    <div class="col-3"><a href="">
+                    <div class="col-3"><a href="#">
                             <div class="cloud-solutions">
                                 <div class="cloud-icon">
                                     <i class="fa-solid fa-cloud"></i>
@@ -150,7 +153,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div class="col-3"><a href="">
+                    <div class="col-3"><a href="#">
                             <div class="cloud-solutions">
                                 <div class="cloud-icon">
                                     <i class="fa-solid fa-laptop"></i>
@@ -163,7 +166,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div class="col-3"><a href="">
+                    <div class="col-3"><a href="#">
                             <div class="cloud-solutions">
                                 <div class="cloud-icon">
                                     <i class="fa-solid fa-video"></i>
@@ -176,7 +179,7 @@
                                 </div>
                             </div>
                         </a></div>
-                    <div class="col-3"><a href="">
+                    <div class="col-3"><a href="#">
                             <div class="cloud-solutions">
                                 <div class="cloud-icon">
                                     <i class="fa-solid fa-server"></i>
@@ -211,45 +214,81 @@
                                 <div class="col-6">
                                     <ul style="list-style: none;">
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="near-cloud"><span>Near Cloud</span></div>
                                             </a>
+                                            <div class="accordion-div">
+                                                <span>Near Cloud</span>
+                                            </div>
                                         </li>
-                                        <li><a href="">
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="backup-system"><span>Backup Systems </span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Backup Systems </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="api-cloud"><span>Api Cloud</span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Api Cloud</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="web-service"><span>Web Services</span></div>
-                                            </a></li>
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Web Services</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-6">
                                     <ul style="list-style: none;">
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="office-cloud"><span>Office Cloud</span></div>
                                             </a>
+                                            <div class="accordion-div">
+                                                <span>Office Cloud</span>
+                                            </div>
                                         </li>
-                                        <li><a href="">
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="hybrid-cloud"><span>Hybrid Cloud</span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Hybrid Cloud</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="sdk-cloud"><span>SDK Cloud</span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>SDK Cloud</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="cloud-hosting"><span>Cloud Hosting</span></div>
-                                            </a></li>
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Cloud Hosting</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -287,45 +326,81 @@
                                 <div class="col-6">
                                     <ul style="list-style: none;">
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="web-design"><span>Web Design</span></div>
                                             </a>
+                                            <div class="accordion-div">
+                                                <span>Web Design</span>
+                                            </div>
                                         </li>
-                                        <li><a href="">
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="android-develop"><span>Android Development </span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Android Development </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="back-end"><span>Back-End</span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Back-End</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="e-commerce"><span>e-Commerce</span></div>
-                                            </a></li>
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>e-Commerce</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-6">
                                     <ul style="list-style: none;">
                                         <li>
-                                            <a href="">
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="mobile-app"><span>Mobile App Design</span></div>
                                             </a>
+                                            <div class="accordion-div">
+                                                <span>Mobile App Design</span>
+                                            </div>
                                         </li>
-                                        <li><a href="">
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="ios-develop"><span>IOS Development</span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>IOS Development</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="front-end"><span>Front-End</span></div>
-                                            </a></li>
-                                        <li><a href="">
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Front-End</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
                                                 <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
                                                 <div class="print-design"><span>Print Design</span></div>
-                                            </a></li>
+                                            </a>
+                                            <div class="accordion-div">
+                                                <span>Print Design</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

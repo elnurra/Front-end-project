@@ -19,9 +19,8 @@ header {
   z-index: 1;
 }
 
-header .fa-bars {
-  display: none;
-  margin-top: 30px;
+header .row {
+  margin: 0px;
 }
 
 header .row .col {
@@ -37,7 +36,7 @@ header .row .col {
   padding-right: 0px;
 }
 
-header .logo-image {
+header .row .logo-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,68 +46,74 @@ header .logo-image {
   padding: 34px;
 }
 
-header .navbar {
-  position: relative;
+header .row .logo-image .fa-bars {
+  display: none;
+  margin-top: 30px;
+}
+
+header .row .navbar {
+  padding: 0px;
   width: 440px;
 }
 
-header .navbar ul {
+header .row .navbar ul {
   margin: 0px;
   padding: 0px;
 }
 
-header .navbar ul li {
+header .row .navbar ul li {
   list-style: none;
+  height: 30px;
   display: inline-block;
   margin: 0 20px;
 }
 
-header .navbar ul li .menu .discover {
+header .row .navbar ul li .menu .discover {
   display: inline;
   left: 110px;
 }
 
-header .navbar ul li .menu .discover:hover .sub-menu {
+header .row .navbar ul li .menu .discover:hover .sub-menu {
   display: block;
 }
 
-header .navbar ul li .menu .discover-nav {
+header .row .navbar ul li .menu .discover-nav {
   padding: 10px 0px;
 }
 
-header .navbar ul li .menu .pages {
+header .row .navbar ul li .menu .pages {
   display: inline;
 }
 
-header .navbar ul li .menu .pages:hover .sub-menu {
+header .row .navbar ul li .menu .pages:hover .sub-menu {
   display: block;
   left: 245px;
 }
 
-header .navbar ul li .menu .pages-nav {
+header .row .navbar ul li .menu .pages-nav {
   padding: 10px 0px;
 }
 
-header .navbar ul li .menu .arrow-down {
+header .row .navbar ul li .menu .arrow-down {
   display: inline;
   margin-left: 10px;
 }
 
-header .navbar ul li a {
+header .row .navbar ul li a {
   text-decoration: none;
   color: gray;
 }
 
-header .navbar ul .sub-menu > li:first-child {
+header .row .navbar ul .sub-menu > li:first-child {
   border-top: none;
   border-top-left-radius: 3px;
 }
 
-header .navbar ul .sub-menu > li:last-child {
+header .row .navbar ul .sub-menu > li:last-child {
   border-bottom-left-radius: 3px;
 }
 
-header .navbar ul .sub-menu {
+header .row .navbar ul .sub-menu {
   background-color: white;
   position: absolute;
   width: 250px;
@@ -116,18 +121,17 @@ header .navbar ul .sub-menu {
   border-radius: 10px;
 }
 
-header .navbar ul .sub-menu li {
+header .row .navbar ul .sub-menu li {
   display: block;
   margin: 0px;
   border-top: 1px solid #eeeeee;
-  padding: 10px;
 }
 
-header .navbar ul .sub-menu li a {
+header .row .navbar ul .sub-menu li a {
   display: block;
 }
 
-header .navbar ul .sub-menu li:hover {
+header .row .navbar ul .sub-menu li:hover {
   display: block;
   background-color: #eeeeee;
   border-left: 3px solid #585ce9;
@@ -135,7 +139,7 @@ header .navbar ul .sub-menu li:hover {
   transition: all 0.3s;
 }
 
-header .btn-sign-in {
+header .row .btn-sign-in {
   background-color: white;
   border-radius: 5px;
   border: 1px solid blue;
@@ -145,7 +149,7 @@ header .btn-sign-in {
   height: 32px;
 }
 
-header .btn-sign-in:hover {
+header .row .btn-sign-in:hover {
   background-color: #585ce9;
   border-radius: 5px;
   margin-top: 30px;
@@ -155,7 +159,7 @@ header .btn-sign-in:hover {
   height: 32px;
 }
 
-header .btn-sign-up {
+header .row .btn-sign-up {
   background-color: #585ce9;
   border-radius: 5px;
   margin-top: 30px;
@@ -165,7 +169,7 @@ header .btn-sign-up {
   height: 32px;
 }
 
-header .btn-sign-up:hover {
+header .row .btn-sign-up:hover {
   background-color: white;
   border-radius: 5px;
   border: 1px solid blue;
@@ -184,7 +188,10 @@ header .btn-sign-up:hover {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+  header .row {
+    min-width: 100%;
+  }
   header .col:nth-child(3) {
     display: none;
   }
@@ -195,12 +202,16 @@ header .btn-sign-up:hover {
     display: none;
   }
   header .col:nth-child(2) {
-    display: none;
+    display: block;
     width: 100%;
+  }
+  header .col:nth-child(2) ul {
+    display: none;
+    left: 0px;
   }
   header .col:nth-child(2) ul li {
     display: block;
-    background-color: #eeeeee;
+    background-color: white;
     width: 100%;
     margin-left: 0px;
   }
@@ -231,7 +242,6 @@ header .btn-sign-up:hover {
     display: block;
     margin: 0px;
     border-top: 1px solid #eeeeee;
-    padding: 10px;
   }
   header .col:nth-child(2) ul li .menu .sub-menu li a {
     display: block;
@@ -263,11 +273,15 @@ header .btn-sign-up:hover {
     display: inline;
     cursor: pointer;
   }
+  header .row .navbar ul li .menu .pages:hover .sub-menu {
+    position: absolute;
+    left: 0px;
+  }
 }
 
 #learn-more {
   width: 100%;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 
 #learn-more .row {
@@ -656,6 +670,7 @@ header .btn-sign-up:hover {
 
 #cloud-services ul li a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #cloud-services ul li a .arrow-right {
@@ -668,6 +683,12 @@ header .btn-sign-up:hover {
   color: white;
   -webkit-transition: width 1s;
   transition: width 1s;
+}
+
+#cloud-services ul li .accordion-div {
+  display: none;
+  background-color: white;
+  text-align: center;
 }
 
 #cloud-services li:hover .arrow-right {
@@ -784,6 +805,7 @@ header .btn-sign-up:hover {
 
 #design-develop ul li a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #design-develop ul li a .arrow-right {
@@ -796,6 +818,12 @@ header .btn-sign-up:hover {
   color: white;
   -webkit-transition: width 1s;
   transition: width 1s;
+}
+
+#design-develop ul li .accordion-div {
+  display: none;
+  background-color: white;
+  text-align: center;
 }
 
 #design-develop li:hover .arrow-right {
@@ -873,6 +901,7 @@ header .btn-sign-up:hover {
 }
 
 #statistics {
+  margin-top: 70px;
   width: auto;
   height: auto;
   overflow: hidden;
@@ -891,7 +920,7 @@ header .btn-sign-up:hover {
 }
 
 #statistics .container .row .col-3 {
-  margin-top: 90px;
+  margin-top: 40px;
   padding: 50px;
   width: 200px;
   height: 200px;

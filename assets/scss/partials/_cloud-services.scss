@@ -16,6 +16,7 @@
       background-color: white;
       a {
         text-decoration: none;
+        cursor: pointer;
         .arrow-right {
           display: inline-block;
           height: 40px;
@@ -26,6 +27,11 @@
           color: white;
           transition: width 1s;
         }
+      }
+      .accordion-div {
+        display: none;
+        background-color: white;
+        text-align: center;
       }
     }
   }

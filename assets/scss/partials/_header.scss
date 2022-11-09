@@ -27,11 +27,10 @@ header {
     width: 110px;
     height: 32px;
   }
-  .fa-bars {
-    display: none;
-    margin-top: 30px;
-  }
+
   .row {
+    margin: 0px;
+
     .col {
       display: flex;
       flex-wrap: wrap;
@@ -39,102 +38,108 @@ header {
       padding-left: 0px;
       padding-right: 0px;
     }
-  }
-  .logo-image {
-    display: flex;
-    justify-content: center;
-    padding: 34px;
-  }
-  .navbar {
-    position: relative;
-    width: 440px;
-    ul {
-      margin: 0px;
-      padding: 0px;
-      li {
-        list-style: none;
-        display: inline-block;
-        margin: 0 20px;
-        .menu {
-          .discover {
-            @include displayInline();
-            left: 110px;
-          }
-          .discover:hover {
-            .sub-menu {
-              display: block;
-            }
-          }
-          .discover-nav {
-            padding: 10px 0px;
-          }
-          .pages {
-            @include displayInline();
-          }
-          .pages:hover {
-            .sub-menu {
-              display: block;
-              left: 245px;
-            }
-          }
-          .pages-nav {
-            padding: 10px 0px;
-          }
-          .arrow-down {
-            @include displayInline();
-            margin-left: 10px;
-          }
-        }
-        a {
-          text-decoration: none;
-          color: gray;
-        }
-      }
-      .sub-menu > li:first-child {
-        border-top: none;
-        border-top-left-radius: 3px;
-      }
-      .sub-menu > li:last-child {
-        border-bottom-left-radius: 3px;
-      }
-      .sub-menu {
-        background-color: white;
-        position: absolute;
-        width: 250px;
+    .logo-image {
+      display: flex;
+      justify-content: center;
+      padding: 34px;
+
+      .fa-bars {
         display: none;
-
-        border-radius: 10px;
-
+        margin-top: 30px;
+      }
+    }
+    .navbar {
+      padding: 0px;
+      width: 440px;
+      ul {
+        margin: 0px;
+        padding: 0px;
         li {
-          display: block;
-          margin: 0px;
-          border-top: 1px solid rgb(238, 238, 238);
-          padding: 10px;
+          list-style: none;
+          height: 30px;
+          display: inline-block;
+          margin: 0 20px;
+          .menu {
+            .discover {
+              @include displayInline();
+              left: 110px;
+            }
+            .discover:hover {
+              .sub-menu {
+                display: block;
+              }
+            }
+            .discover-nav {
+              padding: 10px 0px;
+            }
+            .pages {
+              @include displayInline();
+            }
+            .pages:hover {
+              .sub-menu {
+                display: block;
+                left: 245px;
+              }
+            }
+            .pages-nav {
+              padding: 10px 0px;
+            }
+            .arrow-down {
+              @include displayInline();
+              margin-left: 10px;
+            }
+          }
           a {
-            display: block;
+            text-decoration: none;
+            color: gray;
           }
         }
-        li:hover {
-          display: block;
-          background-color: rgb(238, 238, 238);
-          border-left: 3px solid #585ce9;
-          transition: all 0.3s;
+        .sub-menu > li:first-child {
+          border-top: none;
+          border-top-left-radius: 3px;
+        }
+        .sub-menu > li:last-child {
+          border-bottom-left-radius: 3px;
+        }
+        .sub-menu {
+          background-color: white;
+          position: absolute;
+          width: 250px;
+          display: none;
+
+          border-radius: 10px;
+
+          li {
+            display: block;
+            margin: 0px;
+            border-top: 1px solid rgb(238, 238, 238);
+
+            a {
+              display: block;
+            }
+          }
+          li:hover {
+            display: block;
+            background-color: rgb(238, 238, 238);
+            border-left: 3px solid #585ce9;
+            transition: all 0.3s;
+          }
         }
       }
     }
-  }
 
-  .btn-sign-in {
-    @include forButtonSignIn();
-  }
-  .btn-sign-in:hover {
-    @include forButtonSignUp();
-  }
-  .btn-sign-up {
-    @include forButtonSignUp();
-  }
-  .btn-sign-up:hover {
-    @include forButtonSignIn();
+    .btn-sign-in {
+      @include forButtonSignIn();
+    }
+    .btn-sign-in:hover {
+      @include forButtonSignUp();
+    }
+    .btn-sign-up {
+      @include forButtonSignUp();
+    }
+    .btn-sign-up:hover {
+      @include forButtonSignIn();
+    }
   }
 
   @media (max-width: 1400px) {
@@ -146,7 +151,10 @@ header {
       display: none;
     }
   }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
+    .row {
+      min-width: 100%;
+    }
     .col:nth-child(3) {
       display: none;
       .btn-sign-in {
@@ -157,12 +165,15 @@ header {
       }
     }
     .col:nth-child(2) {
-      display: none;
+      display: block;
       width: 100%;
+
       ul {
+        display: none;
+        left: 0px;
         li {
           display: block;
-          background-color: rgb(238, 238, 238);
+          background-color: white;
           width: 100%;
           margin-left: 0px;
           .menu {
@@ -187,7 +198,7 @@ header {
                 display: block;
                 margin: 0px;
                 border-top: 1px solid rgb(238, 238, 238);
-                padding: 10px;
+
                 a {
                   display: block;
                 }
@@ -222,6 +233,10 @@ header {
           cursor: pointer;
         }
       }
+    }
+    .row .navbar ul li .menu .pages:hover .sub-menu {
+      position: absolute;
+      left: 0px;
     }
   }
 }
