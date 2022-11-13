@@ -15,6 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./src/js/blogevents.js" type="module" defer></script>
+    <script src="./src/js/popup.js" defer></script>
 </head>
 
 <body>
@@ -129,23 +130,28 @@
                                 </div>
                                 <div class="slider-image">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-4" href="./assets/images/header/computer.jpg">
                                             <div class="image-example">
-                                                <img src="./assets/images/header/computer.jpg" alt="">
+                                                <a href="./assets/images/header/computer.jpg"><img
+                                                        src="./assets/images/header/computer.jpg" alt=""></a>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 " href="./assets/images/header/laptops.jpg">
                                             <div class="image-example">
-                                                <img src="./assets/images/header/laptops.jpg" alt="">
+                                                <a href="./assets/images/header/laptops.jpg"><img
+                                                        src="./assets/images/header/laptops.jpg" alt=""></a>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4" href="./assets/images/header/humans.jpg">
                                             <div class="image-example">
-                                                <img src="./assets/images/header/humans.jpg" alt="">
+                                                <a href="./assets/images/header/humans.jpg"><img
+                                                        src="./assets/images/header/humans.jpg" alt=""></a>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="second-description">
                                     <p>
                                         Quisque bibendum mi quis consequat ultricies. Donec quis pharetra nisi, a congue
@@ -250,12 +256,100 @@
 
                     <div class="col-4">
                         <div class="search">
-
-                            <input type="text" id="search-input" placeholder="search">
+                            <input type="text" id="search-input" placeholder="Search">
                             <div class="search-icon">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
+                        </div>
 
+                        <div class="search-list">
+                            <ul class="spheres">
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>Cloud PMS</span></div>
+                                        <div class="number"><span>23</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>DESKTOP PMS</span></div>
+                                        <div class="number"><span>12</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>Hotel Software</span></div>
+                                        <div class="number"><span>153</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>Social Media</span></div>
+                                        <div class="number"><span>9</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>General</span></div>
+                                        <div class="number"><span>95</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>Marketing</span></div>
+                                        <div class="number"><span>32</span></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                                        <div class="sphere"><span>Mobile Future</span></div>
+                                        <div class="number"><span>76</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="informations-btns">
+                            <div class="row">
+                                <div class="col-3"><a href=""><button>Team</button></a></div>
+                                <div class="col-3"><a href=""><button>Hotel</button></a></div>
+                                <div class="col-3"><a href=""><button>Android</button></a></div>
+                                <div class="col-3"><a href=""><button>App</button></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><a href=""><button>Software</button></a></div>
+                                <div class="col-3"><a href=""><button>Development</button></a></div>
+                                <div class="col-3"><a href=""><button>Api</button></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><a href=""><button>Store</button></a></div>
+                                <div class="col-3"><a href=""><button>Reservation</button></a></div>
+                                <div class="col-3"><a href=""><button>Analytics</button></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><a href=""><button>Support</button></a></div>
+                                <div class="col-3"><a href=""><button>Codding</button></a></div>
+                                <div class="col-3"><a href=""><button>Database</button></a></div>
+                            </div>
+                        </div>
+                        <div class="contact-us">
+
+                            <div class="color-blue">
+                                <div class="title">
+                                    <h6>You can contact us for purchase, installation and customizations.</h6>
+                                </div>
+
+                                <div class="contact">
+                                    <button>CONTACT US</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -265,7 +359,29 @@
             </div>
 
         </section>
+        <section id="slider-section">
+            <div class="container">
 
+            </div>
+            <div class="popup d-none ">
+                <div class="inner">
+                    <img src="./assets/images/header/computer.jpg" alt="">
+                    <div class="action">
+                        <div class="close-icon">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                        <div class="arrow-icons">
+                            <div class="arrows prev">
+                                <i class="fa-regular fa-circle-left"></i>
+                            </div>
+                            <div class="arrows next">
+                                <i class="fa-regular fa-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer start -->
     <footer>
